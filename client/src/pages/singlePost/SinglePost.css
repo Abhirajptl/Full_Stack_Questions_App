@@ -1,0 +1,233 @@
+/* .Single-Post {
+    padding: 1rem 2rem;
+    max-width: 60rem;
+    margin: auto;
+}
+
+.Single-Post .topic {
+    color: lightseagreen;
+}
+
+.Single-Post .question {
+    color: rgba(0, 0, 0, .8);
+}
+
+.Single-Post .answer {
+    color: gray;
+}
+
+.Single-Post .btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.Single-Post .btn {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 25px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Single-Post .btn-delete {
+    background-color: tomato;
+}
+
+.Single-Post .btn-update {
+    background-color: rgb(15, 138, 215);
+}
+
+
+
+.input-field, .textarea-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-save {
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    background-color: grey;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-update, .btn-delete {
+    padding: 10px 20px;
+    font-size: 16px;
+} 
+
+ */
+
+
+ /* SinglePost.css */
+.single-post-container {
+    padding: 1rem 2rem;
+    max-width: 60rem;
+    margin: 20px auto; /* Added margin for centering */
+    background-color: #f9f9f9; /* Added light background */
+    border: 1px solid #ddd; /* Added border */
+    border-radius: 8px; /* Added rounded corners */
+    padding: 30px; /* Increased padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+  }
+  
+  .single-post-topic {
+    color: lightseagreen;
+    font-size: 2.5em; /* Adjusted font size */
+    margin-bottom: 15px; /* Added margin */
+  }
+  
+  .single-post-question {
+    color: rgba(0, 0, 0, .8);
+    font-size: 1.8em; /* Adjusted font size */
+    margin-bottom: 20px; /* Added margin */
+    font-weight: bold; /* Added bold style */
+  }
+  
+  .single-post-answer {
+    color: gray;
+    font-size: 1.1em; /* Adjusted font size */
+    line-height: 1.6; /* Improved line height */
+    margin-bottom: 30px; /* Added margin */
+  }
+  
+  .single-post-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 20px; /* Added margin */
+  }
+  
+  .single-post-button {
+    outline: none;
+    border: none;
+    width: auto; /* Adjusted width to fit content */
+    padding: 12px 25px; /* Adjusted padding */
+    font-size: 1em; /* Adjusted font size */
+    color: white;
+    border-radius: 8px; /* Adjusted border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added transition */
+  }
+  
+  .delete-button {
+    background-color: tomato;
+  }
+  
+  .delete-button:hover {
+    background-color: #e06c0b; /* Added hover effect */
+  }
+  
+  .update-button {
+    background-color: rgb(15, 138, 215);
+  }
+  
+  .update-button:hover {
+    background-color: #0056b3; /* Added hover effect */
+  }
+  
+  /* Styles for CreatePost component (reusing where applicable) */
+  .create-post-container {
+    padding: 1rem 2rem;
+    max-width: 60rem;
+    margin: 20px auto;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .input-field,
+  .textarea-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border are inside the element's total width and height */
+  }
+  
+  .btns {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px; /* Adjusted margin */
+  }
+  
+  .btn-save {
+    background-color: green;
+    color: white;
+    padding: 12px 25px; /* Adjusted padding */
+    border: none;
+    border-radius: 8px; /* Adjusted border radius */
+    cursor: pointer;
+    font-size: 1em; /* Adjusted font size */
+    transition: background-color 0.3s ease; /* Added transition */
+  }
+  
+  .btn-save:hover {
+    background-color: #218838; /* Added hover effect */
+  }
+  
+  .btn-cancel {
+    background-color: grey;
+    color: white;
+    padding: 12px 25px; /* Adjusted padding */
+    border: none;
+    border-radius: 8px; /* Adjusted border radius */
+    cursor: pointer;
+    font-size: 1em; /* Adjusted font size */
+    transition: background-color 0.3s ease; /* Added transition */
+  }
+  
+  .btn-cancel:hover {
+    background-color: #6c757d; /* Added hover effect */
+  }
+  
+  /* Reusing styles for consistency */
+  .btn-update,
+  .btn-delete {
+    padding: 12px 25px; /* Adjusted padding */
+    font-size: 1em; /* Adjusted font size */
+    border-radius: 8px; /* Adjusted border radius */
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 10px;
+  }
