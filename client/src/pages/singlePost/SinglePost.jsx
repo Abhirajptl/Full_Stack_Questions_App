@@ -94,7 +94,7 @@ const SinglePost = () => {
   const [error, setError] = useState(null);
   const { postID } = useParams();
   const navigate = useNavigate();
-  const url = "http://localhost:8000/api/v1";
+  const url = "https://full-stack-questions-app.vercel.app/api/v1";
 
   useEffect(() => {
     const fetchPost = async () => {

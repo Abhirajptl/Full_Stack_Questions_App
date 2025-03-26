@@ -129,7 +129,7 @@ const Home = ({ searchQuery }) => {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch("http://localhost:8000/api/v1/getposts");
+      const response = await fetch("https://full-stack-questions-app.vercel.app/api/v1/getposts");
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

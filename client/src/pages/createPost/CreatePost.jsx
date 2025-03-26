@@ -126,7 +126,7 @@ const CreatePost = () => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
   const { postID } = useParams(); // Get the postID from the URL if it exists
-  const url = "http://localhost:8000/api/v1";
+  const url = "https://full-stack-questions-app.vercel.app/api/v1";
 
   useEffect(() => {
     // Fetch post data if postID exists (i.e., it's an update)
