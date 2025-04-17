@@ -5,7 +5,7 @@ import axios from 'axios';
 const UpdatePost = () => {
     const { postID } = useParams();
     const navigate = useNavigate();
-    const url = "https://full-stack-questions-app.vercel.app/api/v1";
+    const url = "http://localhost:8000/api/v1";
 
     // State for storing post details
     const [post, setPost] = useState({
